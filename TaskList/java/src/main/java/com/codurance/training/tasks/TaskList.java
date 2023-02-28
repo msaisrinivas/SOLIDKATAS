@@ -20,13 +20,11 @@ public final class TaskList implements Runnable {
     private ShowFucntionService deadlineShowService =new ViewByDeadline();
     private AddService addProject = new AddProject();
     private AddService addTask = new AddTask();
-    private TaskStatusService checkTask = new CheckTask();
-    private TaskStatusService uncheckTask = new UnCheckTask();
-    private TaskStatusService addDeadline = new AddDeadline();
-    private TaskStatusService deleteTask = new DeleteTask();
+    private UpdateTaskService checkTask = new CheckTask();
+    private UpdateTaskService uncheckTask = new UnCheckTask();
+    private UpdateTaskService addDeadline = new AddDeadline();
+    private UpdateTaskService deleteTask = new DeleteTask();
 
-
-    private long lastId = 0;
 
     public static void main(String[] args) throws Exception {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));

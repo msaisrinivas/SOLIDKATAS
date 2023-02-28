@@ -2,12 +2,10 @@ package com.codurance.training.tasks;
 
 import java.io.PrintWriter;
 import java.sql.Date;
-import java.text.SimpleDateFormat;
-//import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
-public class AddDeadline implements TaskStatusService {
+public class AddDeadline implements UpdateTaskService {
 
 
     @Override

@@ -4,7 +4,7 @@ import java.io.PrintWriter;
 import java.util.List;
 import java.util.Map;
 
-public class DeleteTask implements TaskStatusService{
+public class DeleteTask implements UpdateTaskService {
 
     @Override
     public void setDone(Map<String, List<Task>> tasks, String idString, PrintWriter out) {

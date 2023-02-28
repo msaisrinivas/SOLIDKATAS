@@ -4,16 +4,7 @@ import java.io.PrintWriter;
 import java.util.List;
 import java.util.Map;
 
-public class CheckTask implements TaskStatusService {
-//    @Override
-//    public void check(Map<String, List<Task>> tasks, String idString, PrintWriter out) {
-//        setDone(tasks,idString, true,out);
-//    }
-//
-//    @Override
-//    public void uncheck(Map<String, List<Task>> tasks, String idString, PrintWriter out) {
-//        setDone(tasks,idString, false,out);
-//    }
+public class CheckTask implements UpdateTaskService {
 
     @Override
     public void setDone(Map<String, List<Task>> tasks, String idString, PrintWriter out) {

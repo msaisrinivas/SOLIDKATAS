@@ -4,7 +4,7 @@ import java.io.PrintWriter;
 import java.util.List;
 import java.util.Map;
 
-public interface TaskStatusService {
+public interface UpdateTaskService {
 
     void setDone(Map<String, List<Task>> tasks,String idString, PrintWriter out);
 }

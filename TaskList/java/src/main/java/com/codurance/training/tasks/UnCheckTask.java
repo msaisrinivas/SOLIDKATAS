@@ -4,7 +4,7 @@ import java.io.PrintWriter;
 import java.util.List;
 import java.util.Map;
 
-public class UnCheckTask implements TaskStatusService {
+public class UnCheckTask implements UpdateTaskService {
     @Override
     public void setDone(Map<String, List<Task>> tasks, String idString, PrintWriter out) {
         for (Map.Entry<String, List<Task>> project : tasks.entrySet()) {
